@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF=8"/>
+        <meta name="veiwport" content="width=device-width, intial-scale=1.0"/>
+        <title>Document</title>
+   </head>
+   <body>
+    <script>
+    var xhr = new XMLHttpRequest();
+
+xhr.open("GET","http://restcountries.com/v3.1/all");
+
+xhr.send();
+
+xhr.onload = function () {
+    if (xhr.status!= 200) {
+        console.log("Not found");
+    }else {}
+    let countryDetails = JSON.parse(xhr.responseTxt);
+    console.log(countryDetails);
+    console.log(countryDetails.map((country) => country.flag));
+    console.log(countryDetails.map((country) => country.flag.name.offical));
+};
+</script>
+</body>
+</html>
