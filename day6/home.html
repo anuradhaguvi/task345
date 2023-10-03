@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li>classes</li>
+        <li>constructor</li>
+        <li>Template Literals</li>
+        <li>Prototype</li>
+    </ol>
+     <script>
+    //class Animal {
+      //  constructor() {
+        //    console.log("constructor method!!!");
+     //   }
+        //moves = true;
+      //  message() {
+        //    console.log("Animal class!!!");
+//
+  //      }
+    //}
+
+    //const animal = new Animal();
+class Person {
+    constructor(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+    greet () { 
+        console.log(
+            `Hello, my name is ${this.name} and I am ${this.age} years old,`
+);
+    }
+}
+  const Person1 = new Person("Guvi" , 10);
+  const Person2 = new Person("Anuradha" , 26);
+  Person1.greet();
+  Person2.greet();
+ 
+ </script>   
+    </body>
+    </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day 6 00P in javascript</h1>
+    <ol>
+    <li>classes</li>
+    <li>constructor</li>
+    <li>Template Literals</li>
+    <li>Prototype</li>
+</ol>
+ <script>
+   let animal = {
+    moves: true,
+    eats: true,
+    sleep: true,
+
+   };
+
+   let rabbit = {
+    jump: true,
+   };
+    let lion = {
+        kills: true,
+  };
+
+  rabbit.__proto__ = animal;
+
+   console.log("Rabbit Eats.",rabbit.eats);
+   console.log("Rabbit Moves.",rabbit.moves);
+   
+   console.log("Animal Eats.",animal.eats);
+   console.log("Animals Moves.",animal.moves);
+
+ let fristName = "Anuradha";
+ let LastName = "Rampilla";
+ let age = 26;
+ let education = "BE Mech";
+
+ console.log(
+    `my name is ${fristName} ${LastName} and my age is ${age}. my education qualification is ${education}.`
+ )
+
+ </script>   
+    
+</body>
+</html>

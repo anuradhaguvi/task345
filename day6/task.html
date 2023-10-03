@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day 6 task class movie</h1>
+    <ol>
+        <li>tittle</li>
+        <li>studio</li>
+        <li>rating</li>
+    </ol>
+     <script>
+class Person {
+    constructor(tittle, studio, rating) {
+        this.tittle = tittle;
+        this.studio = studio;
+        this.rating = rating;
+    }
+    greet () { 
+        console.log(
+            `Hello, the movie is ${this.tittle} shooting in ${this.studio} and the rating is ${this.rating},`
+);
+    }
+}
+  const Person1 = new Person("Casino Royale", "Eon Productions" ,  "PG­13");
+  Person1.greet();
+ 
+ </script>   
+    </body>
+    </html>
