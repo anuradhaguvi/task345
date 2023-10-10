@@ -9,18 +9,18 @@
     <script>
     var xhr = new XMLHttpRequest();
 
-xhr.open("GET","http://restcountries.com/v3.1/all");
+xhr.open("GET","https://restcountries.com/v3.1/all");
 
 xhr.send();
 
 xhr.onload = function () {
-    if (xhr.status!= 200) {
-        console.log("Not found");
-    }else {}
-    let countryDetails = JSON.parse(xhr.responseTxt);
+   
+    let countryDetails = JSON.parse(xhr.responseText);
     console.log(countryDetails);
     console.log(countryDetails.map((country) => country.flag));
-    console.log(countryDetails.map((country) => country.flag.name.offical));
+    console.log(countryDetails.map((country) => country.name.official));
+
+    
 };
 </script>
 </body>

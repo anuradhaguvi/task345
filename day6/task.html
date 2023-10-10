@@ -18,6 +18,13 @@ class Person {
         this.tittle = tittle;
         this.studio = studio;
         this.rating = rating;
+        if(!rating){
+            console.log("No rating passed!")
+            this.rating = "PG";
+        }else{
+            console.log(" rating passed!")
+
+        }
     }
     greet () { 
         console.log(
@@ -27,7 +34,10 @@ class Person {
 }
   const Person1 = new Person("Casino Royale", "Eon Productions" ,  "PG­13");
   Person1.greet();
- 
+  
+  
+        console.log(this.rating);
+    
  </script>   
     </body>
     </html>

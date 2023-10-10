@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hi>Getter/setter!!!</hi>
+    <script>
+        class Circle { 
+            constructor(radius) {
+
+            }
+            get radiusCal() {
+                return this.radius * 2;
+            }
+            set radiusCal(newRadius) {
+                if ( newRadius >= 0){
+                    this.radius = newRadius;
+                }else{
+                    console.log("Radius cannot be negative");
+                    
+                }
+            }
+        }
+        const myCircle = new Circle(5);
+        myCircle.radiusCal = 20;
+        console.log(myCircle.radiusCal);
+        myCircle.radiusCal = -20;
+
+    </script>
+</body>
+</html>

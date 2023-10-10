@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li>day-7 OOP in javascript</li>
+        <li>Super</li>
+        <li>this keyword</li>
+        <li>map,filter,reduce</li>
+        <li>getter,setter</li>
+    </ol>
+     <script>
+        class Animal {
+            constructor () {
+                this.moves = true;
+            }
+        }
+        class Rabbit extends Animal{
+            constructor () {
+                super();
+                console.log(this + "Checking this keyword inside Rabbit claass");
+                this.eats = true;
+            }
+        
+        getMessage() {
+            console.log(this + "Checking this keyword getMessage function");
+              
+        }
+    }
+        let rabbit = new Rabbit();
+        console.log(rabbit.moves);
+        console.log(this + "checking this keyword outside the class")
+        rabbit.getMessage();
+        function getMsgOutside() {
+        console.log (this + "Checking this keyword getMsgOutside function");
+    
+        }
+        </script>
+        </body>
+        </html>
