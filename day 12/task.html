@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .wholeDiv {
+            padding: 50px;
+            font-family: sans-serif;
+        }
+
+        .firstDiv,
+        .secondDiv,
+        .thirdDiv {
+            position: relative;
+            width: 200%;
+            height: 800px;
+            background: blueviolet;
+            color: black;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 30%;
+        }
+
+        .firstDiv::after,
+        .secondDiv::after,
+        .thirdDiv::after {
+            position: -webkit-sticky;
+            width: 100%;
+            height: 200%;
+            content: '';
+            background: inherit;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform-origin: top right;
+            transform: skewY(-4deg);
+        }
+
+        .secondDiv::before,
+        .thirdDiv::before {
+            position: relative;
+            width: 400%;
+            height: 200%;
+            content: '';
+            background-color: #EAE1D8;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform-origin: bottom left;
+            transform: skewY(-4deg);
+        }
+
+        .secondDiv {
+            background-color: gray;
+            color: #000;
+        }
+
+        .thirdDiv::before {
+            background: #1F1627;
+        }
+
+        .bgWhite {
+            background-color: white;
+        }
+
+        .borderRadius {
+            border-radius: 500px 500px 0 0;
+        }
+
+        .fieldSet {
+            height: 5165px;
+            position: absolute;
+            border: 2px dotted#fff;
+            width: 105%;
+            z-index: 2;
+            left: 7%;
+            right: 0;
+            top: 20%;
+            border-radius: 50px;
+            border-bottom: none;
+        }
+
+
+        .pad15 {
+            padding-top: 7%;
+        }
+
+        .marBottom {
+            margin-bottom: 10px;
+            font-family: console;
+            font-size: 30px;
+            padding: 50px;
+            padding-left: 25px;
+        }
+
+        .weightClass {
+            font-size: 120px;
+        }
+
+        .centerAlign {
+            text-align: left;
+            padding: 35px 200px;
+            line-height: 1.5;
+            font-family: sans-serif;
+            padding-left: 300px;
+        }
+
+        .consoleClass {
+            font-family: console;
+            letter-spacing: 3px;
+        }
+
+        div.normalStyle {
+            padding: 0 2px 2px 85px;
+            font-weight: lighter;
+            font-family: serif;
+        }
+
+        div.normalStyleOdd {
+            padding: 0 2px 2px 205px;
+            font-weight: lighter;
+            font-family: serif;
+        }
+
+        .posOpp {
+            padding-left: 78px;
+            position: relative;
+            top: -48px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wholeDiv">
+        <div class="fieldSet">
+            <div class="normalStyle">MYBOOK</div>
+        </div>
+        <div class="wholeDiv">
+            <div class="firstDiv borderRadius">
+                <div class="pad15">
+                    <div class="marBottom">
+                        <span class="weightClass">S</span>
+                        <span style="letter-spacing:13px; " class="consoleClass">CROLLING IN WEB DESIGN</span>
+                        <div id="mouseIcon" class="marBottom">
+                            <i class="material-icons" style="font-size:36px">mouse</i>
+                        </div>
+                        <div class="marBottom consoleClass">
+                            <span class="consoleClass" style="letter-spacing:13px; ">THE LONG & THE SHORT OF IT</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="secondDiv  ">
+            <div class="centerAlign">
+                <span class="weightClass consoleClass padEven">L</span>
+                <span class="f30 consoleClass" style="margin-left: -10px;">ONG SCROLL:</span>
+                <span class="normalStyle">MY BOOK--INNERHEART</span>
+                <div class="normalStyle">LIFE THOUGHTS</div>
+                <div class="normalStyle">
+                   The book content is all about daily life
+                   whatever we will face,
+                   
+                   . </div>
+            </div>
+        </div>
+        <div class="thirdDiv  ">
+            <div class="centerAlign">
+                <div class="consoleClass padOdd">
+                    <span class="weightClass consoleClass posThird">S</span>
+                    <span class="f30 consoleClass">TORY-TELLING</span>
+                    <div class="consoleClass f30 posOpp">OPPORTUNITIES</div>
+                </div>
+
+                <div class="normalStyleOdd">
+                    Do you want to tell a story with your product or service?
+                    Long-scrolling lends itself well to a narrative and
+                    encourages meaningful interaction from users.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
