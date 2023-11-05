@@ -32,3 +32,15 @@ function getDressed() {
   
   startDay();
   
+  // getDressed(() => {
+  //   eatBreakfast(() => {
+  //     goOut();
+  //   });
+  // });
+  
+  // getDressed()
+  //   .then(eatBreakfast)
+  //   .then(goOut)
+  //   .catch((err) => {
+  //     console.error("An error occurred:", err);
+  //   });
